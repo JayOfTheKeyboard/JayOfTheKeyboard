@@ -13,7 +13,8 @@ New tools are released under [Sigilet Labs](https://github.com/sigiletlabs).
 ## Upstream work
 
 - [neuledge/context#125](https://github.com/neuledge/context/pull/125): only skip repo-meta filenames at the scan root (merged)
-- [neuledge/context#126](https://github.com/neuledge/context/pull/126): Go module support (in review)
+- [neuledge/context#126](https://github.com/neuledge/context/pull/126): Go module support for the docs registry (merged)
+- [yetone/magpie#88](https://github.com/yetone/magpie/pull/88): the gateway reports a Claude reply cut off by the context window as cut off (merged)
 - [NVIDIA/SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638): SC2 flags piping JSON into `python3` as remote code execution
 - [NVIDIA/SkillSpector#639](https://github.com/NVIDIA/SkillSpector/issues/639): the RP1 `npx` pattern matches across line breaks
 - [NVIDIA/SkillSpector#640](https://github.com/NVIDIA/SkillSpector/issues/640): the JSON report drops the pattern and finding for MCP analyser results
