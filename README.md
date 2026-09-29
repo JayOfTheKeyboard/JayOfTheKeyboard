@@ -26,6 +26,9 @@ In review:
 - [NVIDIA/SkillEvaluator#168](https://github.com/NVIDIA/SkillEvaluator/pull/168): the PII scan stops reporting Chrome User-Agent versions as IP addresses
 - [NVIDIA/SkillSpector#653](https://github.com/NVIDIA/SkillSpector/pull/653): piping plain data into an interpreter is rated low risk instead of remote code execution
 - [microsoft/conductor#572](https://github.com/microsoft/conductor/pull/572): a `$` before a `{{ }}` expression no longer stops a workflow loading
+- [Yeachan-Heo/oh-my-claudecode#4160](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4160): the code-simplifier hook reads the global config from `~/.config` on Linux, where the docs put it
+- [Yeachan-Heo/oh-my-claudecode#4161](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4161): Copilot and Cursor rule globs like `**/*.py` also match files at the top level
+- [volcengine/OpenViking#5448](https://github.com/volcengine/OpenViking/pull/5448): `ovcli.conf` accepts the `oidc_token` and trusted-mode settings the Rust CLI already reads
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
 - [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
