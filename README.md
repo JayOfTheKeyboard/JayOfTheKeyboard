@@ -20,13 +20,13 @@ Merged:
 - [yetone/magpie#88](https://github.com/yetone/magpie/pull/88): the gateway reports a Claude reply cut off by the context window as cut off
 - [yetone/magpie#128](https://github.com/yetone/magpie/pull/128): gateway ids made in the same clock tick stay unique
 - [Yeachan-Heo/oh-my-claudecode#4152](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4152): the git guardrail hook also catches `git --no-pager push` and other global options
+- [Yeachan-Heo/oh-my-claudecode#4160](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4160): the code-simplifier hook reads the global config from `~/.config` on Linux, where the docs put it
+- [Yeachan-Heo/oh-my-claudecode#4161](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4161): Copilot and Cursor rule globs like `**/*.py` also match files at the top level
 
 In review:
 
 - [NVIDIA/SkillEvaluator#168](https://github.com/NVIDIA/SkillEvaluator/pull/168): the PII scan stops reporting Chrome User-Agent versions as IP addresses
 - [microsoft/conductor#572](https://github.com/microsoft/conductor/pull/572): a `$` before a `{{ }}` expression no longer stops a workflow loading
-- [Yeachan-Heo/oh-my-claudecode#4160](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4160): the code-simplifier hook reads the global config from `~/.config` on Linux, where the docs put it
-- [Yeachan-Heo/oh-my-claudecode#4161](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4161): Copilot and Cursor rule globs like `**/*.py` also match files at the top level
 - [volcengine/OpenViking#5448](https://github.com/volcengine/OpenViking/pull/5448): `ovcli.conf` accepts the `oidc_token` and trusted-mode settings the Rust CLI already reads
 - [microsoft/SkillOpt#295](https://github.com/microsoft/SkillOpt/pull/295): the sleep harvester stops reading skill text Claude Code injects as things the user typed
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
