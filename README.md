@@ -27,6 +27,7 @@ Merged:
 - [microsoft/conductor#572](https://github.com/microsoft/conductor/pull/572): a `$` before a `{{ }}` expression no longer stops a workflow loading
 - [volcengine/OpenViking#5448](https://github.com/volcengine/OpenViking/pull/5448): `ovcli.conf` accepts the `oidc_token` and trusted-mode settings the Rust CLI already reads
 - [NVIDIA/SkillEvaluator#168](https://github.com/NVIDIA/SkillEvaluator/pull/168): the PII scan stops reporting Chrome User-Agent versions as IP addresses
+- [freescout-help-desk/freescout#5683](https://github.com/freescout-help-desk/freescout/pull/5683): toolbar icons, stars and menu toggles can be reached with Tab and pressed with Enter or Space
 
 In review:
 
@@ -36,6 +37,5 @@ In review:
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
 - [neuledge/context#175](https://github.com/neuledge/context/pull/175): section titles keep words inside bold, italics, links and code, so Python doc sections stop being indexed as "Introduction"
 - [dmno-dev/varlock#1169](https://github.com/dmno-dev/varlock/pull/1169): the standalone binary can start its encryption helper when run from a directory the user cannot enter, so `varlock cache clear` works for service users
-- [freescout-help-desk/freescout#5683](https://github.com/freescout-help-desk/freescout/pull/5683): toolbar icons, stars and menu toggles can be reached with Tab and pressed with Enter or Space
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12).
