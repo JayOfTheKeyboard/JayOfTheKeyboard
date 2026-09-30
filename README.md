@@ -26,10 +26,10 @@ Merged:
 - [Yeachan-Heo/oh-my-claudecode#4177](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4177): the directory-context hook stops adding a sibling folder's README and AGENTS.md
 - [microsoft/conductor#572](https://github.com/microsoft/conductor/pull/572): a `$` before a `{{ }}` expression no longer stops a workflow loading
 - [volcengine/OpenViking#5448](https://github.com/volcengine/OpenViking/pull/5448): `ovcli.conf` accepts the `oidc_token` and trusted-mode settings the Rust CLI already reads
+- [NVIDIA/SkillEvaluator#168](https://github.com/NVIDIA/SkillEvaluator/pull/168): the PII scan stops reporting Chrome User-Agent versions as IP addresses
 
 In review:
 
-- [NVIDIA/SkillEvaluator#168](https://github.com/NVIDIA/SkillEvaluator/pull/168): the PII scan stops reporting Chrome User-Agent versions as IP addresses
 - [microsoft/SkillOpt#295](https://github.com/microsoft/SkillOpt/pull/295): the sleep harvester stops reading skill text Claude Code injects as things the user typed
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
 - [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
