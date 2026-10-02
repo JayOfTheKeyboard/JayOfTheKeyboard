@@ -1,4 +1,6 @@
-# Jeremy Levartovsky
+<!-- generated:banner -->
+<picture><source media="(prefers-color-scheme: dark)" srcset="generated/banner-dark.svg"><img src="generated/banner-light.svg" alt="Jeremy Levartovsky: tools for AI coding agents" width="1280" height="320"></picture>
+<!-- /generated:banner -->
 
 I build small tools for AI coding agents: Claude Code, Codex, MCP servers and agent skills.
 
@@ -10,9 +12,24 @@ By day I look after systems and infrastructure, and manage open source projects,
 
 New tools are released under [Sigilet Labs](https://github.com/sigiletlabs).
 
-## Upstream work
+## Merged upstream
 
-Merged:
+Fixes merged into other people's projects. One dot per merged pull request.
+
+<!-- generated:stamps -->
+<a href="https://github.com/neuledge/context/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/neuledge-context-dark.svg"><img src="generated/stamps/neuledge-context-light.svg" alt="neuledge/context: 4 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/Yeachan-Heo/oh-my-claudecode/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/yeachan-heo-oh-my-claudecode-dark.svg"><img src="generated/stamps/yeachan-heo-oh-my-claudecode-light.svg" alt="Yeachan-Heo/oh-my-claudecode: 4 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/freescout-help-desk/freescout/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/freescout-help-desk-freescout-dark.svg"><img src="generated/stamps/freescout-help-desk-freescout-light.svg" alt="freescout-help-desk/freescout: 3 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/yetone/magpie/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/yetone-magpie-dark.svg"><img src="generated/stamps/yetone-magpie-light.svg" alt="yetone/magpie: 2 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/dmno-dev/varlock/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/dmno-dev-varlock-dark.svg"><img src="generated/stamps/dmno-dev-varlock-light.svg" alt="dmno-dev/varlock: 1 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/microsoft/SkillOpt/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/microsoft-skillopt-dark.svg"><img src="generated/stamps/microsoft-skillopt-light.svg" alt="microsoft/SkillOpt: 1 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/NVIDIA/SkillEvaluator/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/nvidia-skillevaluator-dark.svg"><img src="generated/stamps/nvidia-skillevaluator-light.svg" alt="NVIDIA/SkillEvaluator: 1 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/microsoft/conductor/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/microsoft-conductor-dark.svg"><img src="generated/stamps/microsoft-conductor-light.svg" alt="microsoft/conductor: 1 merged" width="148" height="184"></picture></a>
+<a href="https://github.com/volcengine/OpenViking/pulls?q=is%3Apr%20author%3AJayOfTheKeyboard%20is%3Amerged"><picture><source media="(prefers-color-scheme: dark)" srcset="generated/stamps/volcengine-openviking-dark.svg"><img src="generated/stamps/volcengine-openviking-light.svg" alt="volcengine/OpenViking: 1 merged" width="148" height="184"></picture></a>
+<!-- /generated:stamps -->
+
+<details>
+<summary>Every merged pull request, one line each</summary>
 
 - [neuledge/context#125](https://github.com/neuledge/context/pull/125): only skip repo-meta filenames at the scan root
 - [neuledge/context#126](https://github.com/neuledge/context/pull/126): Go module support for the docs registry
@@ -33,7 +50,9 @@ Merged:
 - [freescout-help-desk/freescout#5692](https://github.com/freescout-help-desk/freescout/pull/5692): confirmation dialogs focus the primary button, so Enter confirms
 - [freescout-help-desk/freescout#5693](https://github.com/freescout-help-desk/freescout/pull/5693): deleting a conversation opens the next active one when that is the after-send setting, as a status change already does
 
-In review:
+</details>
+
+## In review
 
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
 - [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
