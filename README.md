@@ -35,6 +35,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [neuledge/context#126](https://github.com/neuledge/context/pull/126): Go module support for the docs registry
 - [neuledge/context#166](https://github.com/neuledge/context/pull/166): skip test and example directories only at the repo root
 - [neuledge/context#173](https://github.com/neuledge/context/pull/173): generic types and JSX inside code examples stay in the docs index
+- [neuledge/context#175](https://github.com/neuledge/context/pull/175): section titles keep words inside bold, italics, links and code, so Python doc sections stop being indexed as "Introduction"
 - [yetone/magpie#88](https://github.com/yetone/magpie/pull/88): the gateway reports a Claude reply cut off by the context window as cut off
 - [yetone/magpie#128](https://github.com/yetone/magpie/pull/128): gateway ids made in the same clock tick stay unique
 - [Yeachan-Heo/oh-my-claudecode#4152](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4152): the git guardrail hook also catches `git --no-pager push` and other global options
@@ -49,14 +50,16 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [dmno-dev/varlock#1169](https://github.com/dmno-dev/varlock/pull/1169): the standalone binary can start its encryption helper when run from a directory the user cannot enter, so `varlock cache clear` works for service users
 - [freescout-help-desk/freescout#5692](https://github.com/freescout-help-desk/freescout/pull/5692): confirmation dialogs focus the primary button, so Enter confirms
 - [freescout-help-desk/freescout#5693](https://github.com/freescout-help-desk/freescout/pull/5693): deleting a conversation opens the next active one when that is the after-send setting, as a status change already does
+- [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
+- [axllent/mailpit#742](https://github.com/axllent/mailpit/pull/742): `_` and `%` in a search match themselves instead of acting as wildcards
 
 </details>
 
 ## In review
 
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
-- [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
-- [neuledge/context#175](https://github.com/neuledge/context/pull/175): section titles keep words inside bold, italics, links and code, so Python doc sections stop being indexed as "Introduction"
+- [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
+- [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12).
