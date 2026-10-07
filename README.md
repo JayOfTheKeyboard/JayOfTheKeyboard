@@ -54,6 +54,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [freescout-help-desk/freescout#5693](https://github.com/freescout-help-desk/freescout/pull/5693): deleting a conversation opens the next active one when that is the after-send setting, as a status change already does
 - [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
 - [axllent/mailpit#742](https://github.com/axllent/mailpit/pull/742): `_` and `%` in a search match themselves instead of acting as wildcards
+- [axllent/mailpit#743](https://github.com/axllent/mailpit/pull/743): address searches like `from:"Marks & Spencer"` find names containing `&` or `\`
 
 </details>
 
@@ -63,7 +64,6 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 - [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
-- [axllent/mailpit#743](https://github.com/axllent/mailpit/pull/743): address searches like `from:"Marks & Spencer"` find names containing `&` or `\`
 - [neuledge/context#190](https://github.com/neuledge/context/pull/190): prose sections with long link URLs are indexed instead of skipped as tables of contents
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12), [scc#783](https://github.com/boyter/scc/issues/783), [hindsight#5371](https://github.com/vectorize-io/hindsight/issues/5371), [gitea#39651](https://github.com/go-gitea/gitea/issues/39651).
