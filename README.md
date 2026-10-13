@@ -59,6 +59,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [morluto/rea#1985](https://github.com/morluto/rea/pull/1985): .NET assemblies precompiled for Linux or macOS open in the managed inspection tools instead of failing as an unsupported architecture
 - [morluto/rea#2730](https://github.com/morluto/rea/pull/2730): `rea uninstall` removes only its own row from a shared DeepSeek Harness patch, and keeps the user's settings and comment
 - [morluto/rea#2117](https://github.com/morluto/rea/pull/2117): WebAssembly modules too large to disassemble get a short size-limit error instead of 33 MB of output and advice to run `rea doctor`
+- [morluto/rea#2096](https://github.com/morluto/rea/pull/2096): `rea setup` for Hermes accepts a `config.yaml` that holds only comments or a `---` marker, and keeps them
 
 </details>
 
@@ -68,7 +69,6 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 - [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
-- [morluto/rea#2096](https://github.com/morluto/rea/pull/2096): `rea setup` for Hermes accepts a `config.yaml` that holds only comments or a `---` marker, and keeps them
 - [morluto/rea#2116](https://github.com/morluto/rea/pull/2116): comparing two .NET assemblies pairs each member with its own type and name first, instead of matching it to an identical member of another type
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [neuledge/context#190](https://github.com/neuledge/context/pull/190): prose sections with long link URLs are indexed instead of skipped as tables of contents
