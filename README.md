@@ -70,6 +70,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 - [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
+- [morluto/rea#3059](https://github.com/morluto/rea/pull/3059): comparing two builds of a .NET assembly pairs members whose signatures name the same types at different metadata rows, instead of reporting them removed and added
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [neuledge/context#190](https://github.com/neuledge/context/pull/190): prose sections with long link URLs are indexed instead of skipped as tables of contents
 
