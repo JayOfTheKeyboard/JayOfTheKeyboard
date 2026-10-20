@@ -26,6 +26,9 @@ OWN_ACCOUNTS = ("JayOfTheKeyboard", "sigiletlabs")
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "generated"
 MAX_DOTS = 10
+# Merged upstream, but GitHub shows them as closed: these projects push the
+# fix to their main branch by hand instead of pressing merge.
+LANDED_BY_HAND = ("curl/curl#23469",)
 
 PALETTES = {
     "dark": {
@@ -47,24 +50,40 @@ MARK_COLOURS = {"dark": ("#15171b", "#f0ece4"), "light": ("#f4efe6", "#1b1a19")}
 
 # --- data -------------------------------------------------------------------
 
-def search(query):
+def api(url):
     token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
     if not token:
         sys.exit("GITHUB_TOKEN or GH_TOKEN must be set")
+    req = urllib.request.Request(url, headers={
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+    })
+    with urllib.request.urlopen(req) as resp:
+        return json.load(resp)
+
+
+def search(query):
     items, page = [], 1
     while True:
-        url = "https://api.github.com/search/issues?" + urllib.parse.urlencode(
-            {"q": query, "per_page": 100, "page": page})
-        req = urllib.request.Request(url, headers={
-            "Authorization": f"Bearer {token}",
-            "Accept": "application/vnd.github+json",
-        })
-        with urllib.request.urlopen(req) as resp:
-            body = json.load(resp)
+        body = api("https://api.github.com/search/issues?" + urllib.parse.urlencode(
+            {"q": query, "per_page": 100, "page": page}))
         items += body["items"]
         if len(items) >= body["total_count"] or not body["items"]:
             return items
         page += 1
+
+
+def landed_by_hand():
+    items = []
+    for ref in LANDED_BY_HAND:
+        repo, number = ref.split("#")
+        item = api(f"https://api.github.com/repos/{repo}/issues/{number}")
+        if item["state"] != "closed":
+            sys.exit(f"{ref} is listed as landed by hand but is still open")
+        # The search results carry merged_at; for these, the close is the landing.
+        item["pull_request"]["merged_at"] = item["closed_at"]
+        items.append(item)
+    return items
 
 
 def upstream_query(state):
@@ -229,7 +248,7 @@ def replace_block(readme, name, body):
 
 
 def main():
-    merged_items = search(upstream_query("is:merged"))
+    merged_items = search(upstream_query("is:merged")) + landed_by_hand()
     open_items = search(upstream_query("is:open"))
     repos = merged_by_repo(merged_items)
 
@@ -248,7 +267,8 @@ def main():
         slug = f"{owner}-{name}".lower()
         for mode in PALETTES:
             (stamps_dir / f"{slug}-{mode}.svg").write_text(stamp(o, mode, owner, name, info["count"]))
-        query = urllib.parse.quote(f"is:pr author:{USER} is:merged")
+        by_hand = any(ref.startswith(f"{owner}/{name}#") for ref in LANDED_BY_HAND)
+        query = urllib.parse.quote(f"is:pr author:{USER} is:{'closed' if by_hand else 'merged'}")
         href = f"https://github.com/{owner}/{name}/pulls?q={query}"
         alt = f"{owner}/{name}: {info['count']} merged"
         links.append(f'<a href="{href}">{picture(f"generated/stamps/{slug}", alt, 148, 184)}</a>')
