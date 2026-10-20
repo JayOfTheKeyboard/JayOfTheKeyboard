@@ -63,6 +63,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [morluto/rea#2096](https://github.com/morluto/rea/pull/2096): `rea setup` for Hermes accepts a `config.yaml` that holds only comments or a `---` marker, and keeps them
 - [morluto/rea#2116](https://github.com/morluto/rea/pull/2116): comparing two .NET assemblies pairs each member with its own type and name first, instead of matching it to an identical member of another type
 - [morluto/rea#3059](https://github.com/morluto/rea/pull/3059): comparing two builds of a .NET assembly pairs members whose signatures name the same types at different metadata rows, instead of reporting them removed and added
+- [curl/curl#23469](https://github.com/curl/curl/pull/23469): `-O -J` falls back to the name from the URL when the server sends an empty `filename=""`, `.` or `..`, instead of failing with error 23
 
 </details>
 
