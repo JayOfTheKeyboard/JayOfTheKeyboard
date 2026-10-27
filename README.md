@@ -68,6 +68,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [morluto/rea#3059](https://github.com/morluto/rea/pull/3059): comparing two builds of a .NET assembly pairs members whose signatures name the same types at different metadata rows, instead of reporting them removed and added
 - [curl/curl#23469](https://github.com/curl/curl/pull/23469): `-O -J` falls back to the name from the URL when the server sends an empty `filename=""`, `.` or `..`, instead of failing with error 23
 - [ublue-os/ucore#458](https://github.com/ublue-os/ucore/pull/458): uCore on aarch64 no longer runs out of space in `/boot` when rebasing from Fedora CoreOS, because it drops the devicetree files CoreOS drops
+- [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
 
 </details>
 
@@ -76,9 +77,9 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
-- [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [aicodeking/leanrea#2](https://github.com/aicodeking/leanrea/pull/2): the skill's piped commands run as written, instead of passing `|` to the first command as an argument
 - [axllent/mailpit#757](https://github.com/axllent/mailpit/pull/757): negated `larger:`, `smaller:`, `after:` and `before:` searches return exactly what the plain search leaves out, so a message on the boundary is no longer in both results or in neither
+- [neuledge/context#208](https://github.com/neuledge/context/pull/208): long Markdown sections are split outside code blocks, so a code example with blank lines in it stays in one piece
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12), [scc#783](https://github.com/boyter/scc/issues/783), [hindsight#5371](https://github.com/vectorize-io/hindsight/issues/5371), [gitea#39651](https://github.com/go-gitea/gitea/issues/39651), [rea#4797](https://github.com/morluto/rea/issues/4797), [#4806](https://github.com/morluto/rea/issues/4806), [#7226](https://github.com/morluto/rea/issues/7226).
