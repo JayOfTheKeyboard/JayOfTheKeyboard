@@ -61,6 +61,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [vectorize-io/hindsight#4870](https://github.com/vectorize-io/hindsight/pull/4870): the MCP `recall` docs say what `max_tokens` counts
 - [axllent/mailpit#742](https://github.com/axllent/mailpit/pull/742): `_` and `%` in a search match themselves instead of acting as wildcards
 - [axllent/mailpit#743](https://github.com/axllent/mailpit/pull/743): address searches like `from:"Marks & Spencer"` find names containing `&` or `\`
+- [axllent/mailpit#757](https://github.com/axllent/mailpit/pull/757): negated `larger:`, `smaller:`, `after:` and `before:` searches return exactly what the plain search leaves out, so a message on the boundary is no longer in both results or in neither
 - [morluto/rea#1985](https://github.com/morluto/rea/pull/1985): .NET assemblies precompiled for Linux or macOS open in the managed inspection tools instead of failing as an unsupported architecture
 - [morluto/rea#2730](https://github.com/morluto/rea/pull/2730): `rea uninstall` removes only its own row from a shared DeepSeek Harness patch, and keeps the user's settings and comment
 - [morluto/rea#2117](https://github.com/morluto/rea/pull/2117): WebAssembly modules too large to disassemble get a short size-limit error instead of 33 MB of output and advice to run `rea doctor`
@@ -80,7 +81,6 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [aicodeking/leanrea#2](https://github.com/aicodeking/leanrea/pull/2): the skill's piped commands run as written, instead of passing `|` to the first command as an argument
-- [axllent/mailpit#757](https://github.com/axllent/mailpit/pull/757): negated `larger:`, `smaller:`, `after:` and `before:` searches return exactly what the plain search leaves out, so a message on the boundary is no longer in both results or in neither
 - [neuledge/context#208](https://github.com/neuledge/context/pull/208): long Markdown sections are split outside code blocks, so a code example with blank lines in it stays in one piece
 - [holepunchto/hyperdht#317](https://github.com/holepunchto/hyperdht/pull/317): after a relayed connection upgrades to direct, the server remembers the direct path to the client for reuse instead of the relay's address
 - [Exiv2/exiv2#9553](https://github.com/Exiv2/exiv2/pull/9553): image files shorter than 80 bytes, such as a tiny GIF or BMP, are recognised instead of reported as an unknown image type
