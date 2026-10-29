@@ -45,6 +45,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [neuledge/context#175](https://github.com/neuledge/context/pull/175): section titles keep words inside bold, italics, links and code, so Python doc sections stop being indexed as "Introduction"
 - [neuledge/context#190](https://github.com/neuledge/context/pull/190): prose sections with long link URLs are indexed instead of skipped as tables of contents
 - [neuledge/context#206](https://github.com/neuledge/context/pull/206): pages without a frontmatter title are named by their `# h1` instead of their file name, so Python doc pages stop showing up as `logging-cookbook.html`
+- [neuledge/context#208](https://github.com/neuledge/context/pull/208): long Markdown sections are split outside code blocks, so a code example with blank lines in it stays in one piece
 - [yetone/magpie#88](https://github.com/yetone/magpie/pull/88): the gateway reports a Claude reply cut off by the context window as cut off
 - [yetone/magpie#128](https://github.com/yetone/magpie/pull/128): gateway ids made in the same clock tick stay unique
 - [Yeachan-Heo/oh-my-claudecode#4152](https://github.com/Yeachan-Heo/oh-my-claudecode/pull/4152): the git guardrail hook also catches `git --no-pager push` and other global options
@@ -72,6 +73,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [curl/curl#23469](https://github.com/curl/curl/pull/23469): `-O -J` falls back to the name from the URL when the server sends an empty `filename=""`, `.` or `..`, instead of failing with error 23
 - [ublue-os/ucore#458](https://github.com/ublue-os/ucore/pull/458): uCore on aarch64 no longer runs out of space in `/boot` when rebasing from Fedora CoreOS, because it drops the devicetree files CoreOS drops
 - [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
+- [jgm/pandoc#12007](https://github.com/jgm/pandoc/pull/12007): converting a Jupyter notebook with long cell output no longer slows down with the square of its length (a #7744 notebook: 41 s to 1.4 s)
 
 </details>
 
@@ -82,10 +84,8 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [aicodeking/leanrea#2](https://github.com/aicodeking/leanrea/pull/2): the skill's piped commands run as written, instead of passing `|` to the first command as an argument
-- [neuledge/context#208](https://github.com/neuledge/context/pull/208): long Markdown sections are split outside code blocks, so a code example with blank lines in it stays in one piece
 - [holepunchto/hyperdht#317](https://github.com/holepunchto/hyperdht/pull/317): after a relayed connection upgrades to direct, the server remembers the direct path to the client for reuse instead of the relay's address
 - [Exiv2/exiv2#9553](https://github.com/Exiv2/exiv2/pull/9553): image files shorter than 80 bytes, such as a tiny GIF or BMP, are recognised instead of reported as an unknown image type
-- [jgm/pandoc#12007](https://github.com/jgm/pandoc/pull/12007): converting a Jupyter notebook with long cell output no longer slows down with the square of its length (a #7744 notebook: 41 s to 1.4 s)
 - [jgm/ipynb#4](https://github.com/jgm/ipynb/pull/4): notebooks whose outputs have a null execution count, which the format allows, can be read instead of being rejected
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12), [scc#783](https://github.com/boyter/scc/issues/783), [hindsight#5371](https://github.com/vectorize-io/hindsight/issues/5371), [gitea#39651](https://github.com/go-gitea/gitea/issues/39651), [rea#4797](https://github.com/morluto/rea/issues/4797), [#4806](https://github.com/morluto/rea/issues/4806), [#7226](https://github.com/morluto/rea/issues/7226), [pandoc#12008](https://github.com/jgm/pandoc/issues/12008).
