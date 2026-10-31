@@ -65,6 +65,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [axllent/mailpit#742](https://github.com/axllent/mailpit/pull/742): `_` and `%` in a search match themselves instead of acting as wildcards
 - [axllent/mailpit#743](https://github.com/axllent/mailpit/pull/743): address searches like `from:"Marks & Spencer"` find names containing `&` or `\`
 - [axllent/mailpit#757](https://github.com/axllent/mailpit/pull/757): negated `larger:`, `smaller:`, `after:` and `before:` searches return exactly what the plain search leaves out, so a message on the boundary is no longer in both results or in neither
+- [axllent/mailpit#759](https://github.com/axllent/mailpit/pull/759): the link check finds a link at the very start of a plain-text message, such as a password-reset email that is just the link
 - [morluto/rea#1985](https://github.com/morluto/rea/pull/1985): .NET assemblies precompiled for Linux or macOS open in the managed inspection tools instead of failing as an unsupported architecture
 - [morluto/rea#2730](https://github.com/morluto/rea/pull/2730): `rea uninstall` removes only its own row from a shared DeepSeek Harness patch, and keeps the user's settings and comment
 - [morluto/rea#2117](https://github.com/morluto/rea/pull/2117): WebAssembly modules too large to disassemble get a short size-limit error instead of 33 MB of output and advice to run `rea doctor`
@@ -75,6 +76,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [ublue-os/ucore#458](https://github.com/ublue-os/ucore/pull/458): uCore on aarch64 no longer runs out of space in `/boot` when rebasing from Fedora CoreOS, because it drops the devicetree files CoreOS drops
 - [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
 - [jgm/pandoc#12007](https://github.com/jgm/pandoc/pull/12007): converting a Jupyter notebook with long cell output no longer slows down with the square of its length (a #7744 notebook: 41 s to 1.4 s)
+- [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 
 </details>
 
@@ -82,12 +84,10 @@ Fixes merged into other people's projects. One dot per merged pull request.
 
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
-- [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [aicodeking/leanrea#2](https://github.com/aicodeking/leanrea/pull/2): the skill's piped commands run as written, instead of passing `|` to the first command as an argument
 - [holepunchto/hyperdht#317](https://github.com/holepunchto/hyperdht/pull/317): after a relayed connection upgrades to direct, the server remembers the direct path to the client for reuse instead of the relay's address
 - [Exiv2/exiv2#9553](https://github.com/Exiv2/exiv2/pull/9553): image files shorter than 80 bytes, such as a tiny GIF or BMP, are recognised instead of reported as an unknown image type
 - [jgm/ipynb#4](https://github.com/jgm/ipynb/pull/4): notebooks whose outputs have a null execution count, which the format allows, can be read instead of being rejected
-- [axllent/mailpit#759](https://github.com/axllent/mailpit/pull/759): the link check finds a link at the very start of a plain-text message, such as a password-reset email that is just the link
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12), [scc#783](https://github.com/boyter/scc/issues/783), [hindsight#5371](https://github.com/vectorize-io/hindsight/issues/5371), [gitea#39651](https://github.com/go-gitea/gitea/issues/39651), [rea#4797](https://github.com/morluto/rea/issues/4797), [#4806](https://github.com/morluto/rea/issues/4806), [#7226](https://github.com/morluto/rea/issues/7226), [pandoc#12008](https://github.com/jgm/pandoc/issues/12008).
