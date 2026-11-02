@@ -2,15 +2,17 @@
 <picture><source media="(prefers-color-scheme: dark)" srcset="generated/banner-dark.svg"><img src="generated/banner-light.svg" alt="Jeremy Levartovsky: tools for AI coding agents" width="1280" height="320"></picture>
 <!-- /generated:banner -->
 
-I build small tools for AI coding agents: Claude Code, Codex, MCP servers and agent skills.
+I'm Jeremy, a developer in Australia. I write mostly Go and Rust, and I'm a little obsessed with making software fast and lean.
 
-By day I look after systems and infrastructure, and manage open source projects, for a not-for-profit in Australia. Everything here is personal work.
+My interests wander: tools for AI coding agents, running AI locally, IT admin tools, peer-to-peer networking, security and bug hunting. Most of my public work so far is fixes in other people's projects, listed below. The tools I build myself are released under [Sigilet Labs](https://github.com/sigiletlabs).
+
+By day I look after systems and infrastructure, and manage open source projects, for a not-for-profit. Everything here is personal work.
+
+If you work on similar things, I'd like to hear from you. My email is on my GitHub profile (visible when you're signed in).
 
 ## Start here
 
 - [ai-quota-meter](https://github.com/sigiletlabs/ai-quota-meter): shows your remaining Claude Code quota on the status line, using Anthropic's own numbers, and switches on Codex's built-in quota display. A single static binary with no network access.
-
-New tools are released under [Sigilet Labs](https://github.com/sigiletlabs).
 
 ## Merged upstream
 
