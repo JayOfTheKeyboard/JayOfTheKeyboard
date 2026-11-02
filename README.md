@@ -86,6 +86,7 @@ Fixes merged into other people's projects. One dot per merged pull request.
 
 - [stripe/link-cli#370](https://github.com/stripe/link-cli/pull/370): `--auth` without a path is refused instead of logging out the default session
 - [ahmad-a0/silverbullet-mcp#19](https://github.com/ahmad-a0/silverbullet-mcp/pull/19): the note-editing tools only write `.md` notes
+- [christian-korneck/claude-desktop-rpm#4](https://github.com/christian-korneck/claude-desktop-rpm/pull/4): the RPM spec builds a working Claude Desktop 2.x on Fedora (bump to 2.2553.1)
 - [Mbed-TLS/mbedtls#11002](https://github.com/Mbed-TLS/mbedtls/pull/11002): the `cert_write` and `cert_req` sample programs accept IPv6 addresses in `san=IP:` without overflowing the stack, and keep each IP entry's own address (backports [#11003](https://github.com/Mbed-TLS/mbedtls/pull/11003), [#11004](https://github.com/Mbed-TLS/mbedtls/pull/11004))
 - [aicodeking/leanrea#2](https://github.com/aicodeking/leanrea/pull/2): the skill's piped commands run as written, instead of passing `|` to the first command as an argument
 - [holepunchto/hyperdht#317](https://github.com/holepunchto/hyperdht/pull/317): after a relayed connection upgrades to direct, the server remembers the direct path to the client for reuse instead of the relay's address
