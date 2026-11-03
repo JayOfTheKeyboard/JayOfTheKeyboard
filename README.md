@@ -8,7 +8,7 @@ My interests wander: tools for AI coding agents, running AI locally, IT admin to
 
 By day I look after systems and infrastructure, and manage open source projects, for a not-for-profit. Everything here is personal work.
 
-If you work on similar things, I'd like to hear from you. My email is on my GitHub profile (visible when you're signed in).
+If you work on similar things, I'd like to hear from you. Open an issue on any of my repos and say hello.
 
 ## Start here
 
