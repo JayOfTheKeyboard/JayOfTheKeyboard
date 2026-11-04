@@ -18,7 +18,7 @@ If you work on similar things, I'd like to hear from you. Open an issue on any o
 
 - [ai-quota-meter](https://github.com/sigiletlabs/ai-quota-meter): shows your remaining Claude Code quota on the status line, using Anthropic's own numbers, and switches on Codex's built-in quota display. A single static binary with no network access.
 
-  <a href="https://github.com/sigiletlabs/ai-quota-meter"><img src="https://raw.githubusercontent.com/sigiletlabs/ai-quota-meter/main/docs/images/demo.gif" alt="ai-quota-meter setting itself up on first run, then the status line across five turns of a session as the five-hour quota climbs from 12% to 79% and its reset time counts down" width="640"></a>
+  <a href="https://github.com/sigiletlabs/ai-quota-meter"><img src="https://raw.githubusercontent.com/sigiletlabs/ai-quota-meter/main/docs/images/demo.gif" alt="The lower third of Claude Code, Codex and OpenCode in turn, each showing its five-hour and weekly quota figures climbing over a few turns" width="640"></a>
 
 ## Merged upstream
 
