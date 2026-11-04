@@ -13,6 +13,9 @@ If you work on similar things, I'd like to hear from you. Open an issue on any o
 ## Start here
 
 - [soc-thief](https://github.com/sigiletlabs/soc-thief): sleep through the night while it reads your Wazuh alerts. You get one Discord message in the morning, and a page only when something looks like a breach. An AI model gives advice but can't hide an alert. It runs on your own host, reads Wazuh with a read-only account, and sends nothing to a hosted model unless you opt in.
+
+  <a href="https://github.com/sigiletlabs/soc-thief"><img src="https://raw.githubusercontent.com/sigiletlabs/soc-thief/main/docs/images/tui.gif" alt="The soc-thief terminal console stepping through a demo night: overview, alert groups, a protected malware group that tuning can't hide, health and history" width="640"></a>
+
 - [ai-quota-meter](https://github.com/sigiletlabs/ai-quota-meter): shows your remaining Claude Code quota on the status line, using Anthropic's own numbers, and switches on Codex's built-in quota display. A single static binary with no network access.
 
 ## Merged upstream
