@@ -81,6 +81,9 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [holepunchto/dht-rpc#133](https://github.com/holepunchto/dht-rpc/pull/133): closing a session releases each of its requests from the congestion window once, not twice
 - [jgm/pandoc#12007](https://github.com/jgm/pandoc/pull/12007): converting a Jupyter notebook with long cell output no longer slows down with the square of its length (a #7744 notebook: 41 s to 1.4 s)
 - [zvec-ai/zvec-grep#229](https://github.com/zvec-ai/zvec-grep/pull/229): managed `rg` searches keep their globs and ignore rules when the search path starts with `.`
+- [axllent/mailpit#764](https://github.com/axllent/mailpit/pull/764): a message Mailpit cannot parse is rejected with `554` instead of accepted with `250 queued` and silently dropped
+- [morluto/rea#7225](https://github.com/morluto/rea/pull/7225): Chrome DevTools HAR files whose `serverIPAddress` is a bracketed IPv6 address are inspected instead of refused as a whole
+- [google/osv-scanner#3214](https://github.com/google/osv-scanner/pull/3214): Rust call analysis logs and skips an `.rlib` whose ar member header has a negative or non-numeric size, instead of panicking and ending the whole scan
 
 </details>
 
@@ -94,7 +97,5 @@ Fixes merged into other people's projects. One dot per merged pull request.
 - [holepunchto/hyperdht#317](https://github.com/holepunchto/hyperdht/pull/317): after a relayed connection upgrades to direct, the server remembers the direct path to the client for reuse instead of the relay's address
 - [Exiv2/exiv2#9553](https://github.com/Exiv2/exiv2/pull/9553): image files shorter than 80 bytes, such as a tiny GIF or BMP, are recognised instead of reported as an unknown image type
 - [jgm/ipynb#4](https://github.com/jgm/ipynb/pull/4): notebooks whose outputs have a null execution count, which the format allows, can be read instead of being rejected
-- [axllent/mailpit#764](https://github.com/axllent/mailpit/pull/764): a message Mailpit cannot parse is rejected with `554` instead of accepted with `250 queued` and silently dropped
-- [morluto/rea#7225](https://github.com/morluto/rea/pull/7225): Chrome DevTools HAR files whose `serverIPAddress` is a bracketed IPv6 address are inspected instead of refused as a whole
 
 Issues filed: [SkillSpector#638](https://github.com/NVIDIA/SkillSpector/issues/638), [#639](https://github.com/NVIDIA/SkillSpector/issues/639), [#640](https://github.com/NVIDIA/SkillSpector/issues/640), [SkillEvaluator#167](https://github.com/NVIDIA/SkillEvaluator/issues/167), [silverbullet-mcp#20](https://github.com/ahmad-a0/silverbullet-mcp/issues/20), [chrome-agent#12](https://github.com/captivus/chrome-agent/issues/12), [scc#783](https://github.com/boyter/scc/issues/783), [hindsight#5371](https://github.com/vectorize-io/hindsight/issues/5371), [gitea#39651](https://github.com/go-gitea/gitea/issues/39651), [rea#4797](https://github.com/morluto/rea/issues/4797), [#4806](https://github.com/morluto/rea/issues/4806), [#7226](https://github.com/morluto/rea/issues/7226), [pandoc#12008](https://github.com/jgm/pandoc/issues/12008).
